@@ -1,0 +1,8 @@
+pandas==3.0.5
+numpy==2.5.3
+scikit-learn
+xgboost
+mlflow==3.16.0
+fastapi==0.141.1
+uvicorn==0.52.4
+pydantic

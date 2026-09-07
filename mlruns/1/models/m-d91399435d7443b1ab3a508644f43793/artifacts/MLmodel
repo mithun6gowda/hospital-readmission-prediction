@@ -1,0 +1,26 @@
+artifact_path: file:///c:/Users/mithu/Music/MLProjects/hospital-readmission-prediction/mlruns/1/models/m-d91399435d7443b1ab3a508644f43793/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.skops
+    predict_fn: predict
+    python_version: 3.12.2
+  sklearn:
+    code: null
+    pickled_model: model.skops
+    serialization_format: skops
+    sklearn_version: 1.9.0
+    skops_trusted_types:
+    - numpy.dtype
+    - xgboost.core.Booster
+    - xgboost.sklearn.XGBClassifier
+mlflow_version: 3.16.0
+model_id: m-d91399435d7443b1ab3a508644f43793
+model_size_bytes: 1140873
+model_uuid: m-d91399435d7443b1ab3a508644f43793
+prompts: null
+run_id: 0d62afd38b4241158fdfde68b0b4c010
+utc_time_created: '2026-09-07 10:48:06.517766'
