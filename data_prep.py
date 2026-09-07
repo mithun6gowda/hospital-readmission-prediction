@@ -329,6 +329,47 @@ def prepare(data_path):
 
     df = load_and_prepare_data(data_path)
 
+    numeric_features, categorical_features = get_feature_lists(df)
+
+    feature_columns = numeric_features + categorical_features
+
+    X = df[feature_columns].copy()
+
+    y = df["target"].copy()
+
+    # --------------------------------------------------------
+    # 70 / 15 / 15 stratified split
+    # --------------------------------------------------------
+
+    X_train, X_temp, y_train, y_temp = train_test_split(
+        X,
+        y,
+        test_size=0.30,
+        stratify=y,
+        random_state=RANDOM_STATE
+    )
+
+    X_val, X_test, y_val, y_test = train_test_split(
+        X_temp,
+        y_temp,
+        test_size=0.50,
+        stratify=y_temp,
+        random_state=RANDOM_STATE
+    )
+
+    return (
+        X,
+        y,
+        X_train,
+        X_val,
+        X_test,
+        y_train,
+        y_val,
+        y_test
+    )
+
+    df = load_and_prepare_data(data_path)
+
     X = df.drop(
         columns=["target"]
     ).copy()

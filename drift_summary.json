@@ -1,0 +1,14 @@
+{
+  "prediction_psi": 0.0262,
+  "psi_threshold": 0.2,
+  "prediction_drift": false,
+  "drifted_features": [
+    "time_in_hospital",
+    "num_medications",
+    "age_midpoint",
+    "diag_1_category"
+  ],
+  "drifted_feature_share": 0.087,
+  "drift_share_threshold": 0.3,
+  "dataset_drift": false
+}
