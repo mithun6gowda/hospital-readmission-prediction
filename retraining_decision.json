@@ -1,0 +1,16 @@
+{
+  "prediction_psi": 0.25,
+  "psi_threshold": 0.2,
+  "psi_trigger": true,
+  "drifted_feature_share": 0.087,
+  "drift_share_threshold": 0.3,
+  "feature_drift_trigger": false,
+  "dataset_drift": false,
+  "dataset_drift_trigger": false,
+  "retrain": true,
+  "retraining_executed": true,
+  "retrain_run_id": "d5a8010b6c75426a88e5c4dc33012328",
+  "registered_model": "hospital_readmission_xgboost",
+  "registered_version": 6,
+  "production_alias": "production"
+}
