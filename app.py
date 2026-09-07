@@ -19,12 +19,8 @@ app = FastAPI(
 # MLFLOW CONFIGURATION
 # ============================================================
 
-mlflow.set_tracking_uri("sqlite:///mlflow.db")
-
-MODEL_URI = "models:/hospital_readmission_xgboost@production"
-
-# Load the corrected production sklearn model
-model = mlflow.sklearn.load_model(MODEL_URI)
+MODEL_PATH = "mlruns/1/models/m-d91399435d7443b1ab3a508644f43793/artifacts"
+model = mlflow.sklearn.load_model(MODEL_PATH)
 
 
 # ============================================================

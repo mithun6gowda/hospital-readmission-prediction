@@ -11,6 +11,7 @@ COPY config.py .
 COPY data_prep.py .
 COPY diabetic_data.csv .
 COPY mlflow.db .
+COPY mlruns ./mlruns
 
 EXPOSE 8000
 
